@@ -13,7 +13,7 @@ const CartItemComponent = () => {
             Gaming mouse
           </Col>
           <Col md={2}>
-            <b>$89</b>
+            <b> ₹89</b>
           </Col>
           <Col md={3}>
             <Form.Select>

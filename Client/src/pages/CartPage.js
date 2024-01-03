@@ -21,7 +21,7 @@ const CartPage = () => {
               <h3>Subtotal (2 Items)</h3>
             </ListGroup.Item>
             <ListGroup.Item>
-              Price: <span className="fw-bold">$892</span>
+              Price: <span className="fw-bold">₹892</span>
             </ListGroup.Item>
             <ListGroup.Item>
               <LinkContainer to="/user/order-details">
