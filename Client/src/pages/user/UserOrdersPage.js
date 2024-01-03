@@ -21,7 +21,7 @@ const UserOrdersPage = () => {
               (item, idx) => (
                 <tr key={idx}>
                   <td>{idx +1}</td>
-                  <td>Mark Twain</td>
+                  <td>Prabal Yadav</td>
                   <td>2022-09-12</td>
                   <td>₹124</td>
                   <td>
