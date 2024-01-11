@@ -3,18 +3,18 @@ const ObjectId = require("mongodb").ObjectId;
 
 const users = [
       {
-    name: 'admin',
-    lastName: 'admin',
-    email: 'admin@admin.com',
-    password: bcrypt.hashSync('admin@admin.com', 10),
+    name: 'Namit',
+    lastName: 'Yadav',
+    email: 'yadavnamit@gmail.com',
+    password: bcrypt.hashSync('yadavnamit', 10),
     isAdmin: true,
   },
   {
       _id: ObjectId("625add3d78fb449f9d9fe2ee"),
-    name: 'John',
-    lastName: 'Doe',
-    email: 'john@doe.com',
-    password: bcrypt.hashSync('john@doe.com', 10),
+    name: 'Prabal',
+    lastName: 'yadav',
+    email: 'prabalyadav@gmail.com',
+    password: bcrypt.hashSync('prabalyadav', 10),
   },
 ]
 
