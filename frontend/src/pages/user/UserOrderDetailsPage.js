@@ -9,14 +9,14 @@ const getOrder = async (orderId) => {
 }
 
 const loadPayPalScript = (cartSubtotal, cartItems, orderId, updateStateAfterOrder) => {
-    loadScript({"client-id": "your PayPal client id"})
+    loadScript({"client-id": "your PhonePay client id"})
     .then(paypal => {
         paypal
         .Buttons(buttons(cartSubtotal, cartItems, orderId, updateStateAfterOrder))
-        .render("#paypal-container-element");
+        .render("#PhonePay-container-element");
     })
     .catch(err => {
-        console.error("failed to load the PayPal JS SDK script", err);
+        console.error("failed to load the PhonePay JS SDK script", err);
     })
 }
 
@@ -30,7 +30,7 @@ const buttons = (cartSubtotal, cartItems, orderId, updateStateAfterOrder) => {
                             value: cartSubtotal,
                             breakdown: {
                                 item_total: {
-                                    currency_code: "USD",
+                                    currency_code: "INR",
                                     value: cartSubtotal,
                                 }
                             }
@@ -39,7 +39,7 @@ const buttons = (cartSubtotal, cartItems, orderId, updateStateAfterOrder) => {
                             return {
                                name: product.name,
                                 unit_amount: {
-                                   currency_code: "USD", 
+                                   currency_code: "INR", 
                                    value: product.price,
                                 },
                                 quantity: product.quantity,
