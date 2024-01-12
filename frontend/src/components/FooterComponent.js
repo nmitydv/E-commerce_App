@@ -6,7 +6,7 @@ const FooterComponent = () => {
       <Container fluid>
         <Row className="mt-5">
           <Col className="bg-dark text-white text-center py-5">
-          Copyright &copy; 2023 Online Shop MARTPIN | Created with ❤️ by Namit Yadav
+          Copyright &copy; 2023 MARTPIN | Created by ❤️ Namit Yadav
           </Col>
         </Row>
       </Container>
