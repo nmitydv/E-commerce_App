@@ -81,7 +81,7 @@ const ProductListPageComponent = ({ getProducts, categories }) => {
   }, [categoryName, pageNumParam, searchQuery, filters, sortOption]);
 
   const handleFilters = () => {
-     navigate(location.pathname.replace(/\/[0-9]+₹/, "")); 
+     navigate(location.pathname.replace(/\/[0-9]+$/, "")); 
     setShowResetFiltersButton(true);
     setFilters({
       price: price,
